@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="user.css">
+    </head>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="navigation">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" height=30 width=30>
+                Practo
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav ml-auto" align="center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Landing Page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Landing Page.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bookings List.html">Bookings List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Landing Page.html">Logout</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admin Login.html">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="container" id="booking-details">
+            <form method="post" action="">
+                <div>
+                    <h2>Booking Details</h2>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="contact_number">Contact Number</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" id="contact_number" name="contact_number" type="text" placeholder="Contact Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="age">Age</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" id="age" name="age" type="text" placeholder="Age">
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around" style="padding-top: 20px;">
+                    <div class="col-11">
+                        <div class="row my-auto">
+                            <div class="form-check-inline">
+                                <label class="form-check-label">Gender</label>
+                            </div>&emsp;&emsp;
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" id="option1" name="gender" value="male">Male
+                                </label>
+                            </div>&emsp;
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" id="option2" name="gender" value="female">Female
+                                </label>
+                            </div>&emsp;
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" id="option3" name="gender" value="other">Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="date">Select Date</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" id="date" name="date" type="date">
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-5">
+                        <div class="row" style="padding-top: 15px;">
+                            <label for="timeslot">Pick a Timeslot</label>
+                        </div>
+                        <div class="row">
+                            <select class="form-control" id="timeslot" name="timeslot" type="text">
+                                <option value="morning">Morning</option>
+                                <option value="afternoon">Afternoon</option>
+                                <option value="evening">Evening</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around" style="padding-top: 15px;">
+                    <div class="col-11">
+                        <div class="row">
+                            <label for="details">Personal Details &amp Delivery Details</label>
+                        </div>
+                        <div class="row">
+                            <textarea class="form-control" id="details" name="details" type="text" rows="5" style="color: black; text-align: left;"></textarea>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row justify-content-around" style="padding-top: 20px;">
+                    <div class="col-3">
+                        <a class="form-control btn btn-success" href="Landing Page.html">Submit</a>
+                    </div>
+                    <div class="col-3">
+                        <a class="form-control btn btn-danger" href="New Booking Page.html">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <div class="row justify-content-around">
+            <div class="col-11 col-sm-6" id="contact-us">
+                <h2>Contact Us</h2>
+                <p>Have questions about our products, support services, or anything else? Let us know and we&apos;ll get back to you.</p>
+                <div id="address">
+                    <h4>Address</h4>
+                    <p>Salarpuria symbiosis Arekere Village Begur, Bannerghatta Main Rd, Venugopal Reddy Layout, Uttarahalli Hobli, Bengaluru, Karnataka 560076</p>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                        <i class="fas fa-blog fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="https://blog.practo.com/" data-toggle="tooltip" data-placement="right" title="Our Blog">Blog</a><br>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                        <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="https://www.practo.com/company/press" data-toggle="tooltip" data-placement="right" title="Latest News">Press</a>
+                </div>
+            </div>
+            <div class="col-11 col-sm-5 col-md-4" id="quick-links">
+                <h2>Social</h2>
+                <ul>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="https://www.facebook.com/practo">Facebook</a></li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="https://twitter.com/Practo">Twitter</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="https://www.linkedin.com/company/practo-technologies-pvt-ltd">Linkedin</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="https://www.youtube.com/user/PractoSupport">Youtube</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="https://github.com/practo">Github</a>
+                    </li>
+                </ul>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="Landing Page.html">Home</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-ticket fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="New Booking Page.html">Book a Diagnostic Test</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="Landing Page.html#about">About</a>
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x" style="color: black;"></i>
+                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <a href="Landing Page.html#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</html>
